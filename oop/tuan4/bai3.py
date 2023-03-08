@@ -67,7 +67,4 @@ class ListItem:
         for it in self.lst:
             s += str(it)
         return s
-    f.write(self.lst)
-f=open("dulieu.txt","w")
-item1= Item(3, "book", 50)
-item2= Item(2, "ghe", 50)
+    
