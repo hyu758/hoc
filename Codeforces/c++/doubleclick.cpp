@@ -2,20 +2,20 @@
 using namespace std;
 void solve(){
 	string s;
-	set<char> v;
-	cin>>s;
-	for (int i=0;s.size();i++){
-		if (s[i]==s[i+1]){
-			i++;
+    cin>>s;
+    set<char> v;
+    for (int i=0;i<s.size();i++){
+    	if (s[i]==s[i+1]){
+    		i++;
 		}
 		else{
 			v.insert(s[i]);
 		}
-	}
-	for (auto& x:v){
-		cout<<x;
-	}
-	cout<<"\n";
+		}
+    	for (auto x: v){
+    		cout<<x;
+		}
+		cout<<"\n";
 }
 int main(){
 	ios_base::sync_with_stdio(false);
@@ -24,6 +24,7 @@ int main(){
     cin>>t;
     while (t>0){
     	solve();
-    	t--;
+		t--;
 	}
+	return 0;
 }
