@@ -1,14 +1,21 @@
 t=int(input())
-res={}
-while (t>0):
-    s=input()
-    for i in range(len(s)):
-        if s[i]==s[i+1]:
-            i+=1
-        else:
-            res.add(s[i])
-    res.sort()
-    for i in res:
-        print(i,end="")
-    print("")
+while (t):
+    lst=[]
+    res=[]
+    i=list(map(int,input().split()))
+    a=i[0]
+    b=i[1]
+    if (a <100 and b<100):
+        for i in range(a,b+1):
+            lst.append(i)
+        for i in lst:
+            i=str(i)
+            t1=int(i[0])
+            t2=int(i[1])
+            res.append(t1-t2)
+        m = max(res)
+        indx=res.index(m)
+        print(lst[indx])
+    else:
+        print(90)
     t-=1
