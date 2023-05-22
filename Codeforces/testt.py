@@ -11,6 +11,6 @@ while (t):
             res+=2
         lst.append(x)
     t-=1
-print(res)
+    print(res)
 
     
